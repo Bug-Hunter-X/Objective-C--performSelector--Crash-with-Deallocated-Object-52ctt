@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon bug in Objective-C related to the use of `performSelector:withObject:afterDelay:` with selectors that take objects as arguments.  If the object passed to `withObject:` is deallocated before the selector is invoked, a crash may occur. The solution demonstrates how to avoid this crash by using blocks or weak references.
